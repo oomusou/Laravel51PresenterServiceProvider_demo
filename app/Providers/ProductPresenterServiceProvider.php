@@ -9,20 +9,18 @@ class ProductPresenterServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
-     * @param ProductPresenterFactory $productPresenterServiceProvider
+     * @param ProductPresenterFactory $productPresenterFactory
      */
-    public function boot(ProductPresenterFactory $productPresenterServiceProvider)
+    public function boot(ProductPresenterFactory $productPresenterFactory)
     {
-        $productPresenterServiceProvider->bindProductPresenter('en-us');
+        $productPresenterFactory->bindProductPresenter('en-us');
     }
 
     /**
      * Register the application services.
-     *
+     *ｅ
      */
     public function register()
     {
-
     }
-
 }
