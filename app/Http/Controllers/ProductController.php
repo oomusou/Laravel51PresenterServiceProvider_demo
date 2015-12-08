@@ -9,7 +9,7 @@ use MyBlog\Services\OrderService;
 class ProductController extends Controller
 {
     /** @var OrderService */
-    private $orderService;
+    protected $orderService;
 
     /**
      * ProductController constructor.

@@ -3,21 +3,20 @@
 namespace MyBlog\Presenters;
 
 use Illuminate\Contracts\Foundation\Application;
-use Illuminate\Support\Facades\App;
 
 class ProductPresenterFactory
 {
     /** @var Application */
-    private $app;
+    protected $app;
 
     /**
      * ProductPresenterFactory constructor.
+     * @param Application $app
      */
     public function __construct(Application $app)
     {
         $this->app = $app;
     }
-
 
     /**
      * @param string $lang

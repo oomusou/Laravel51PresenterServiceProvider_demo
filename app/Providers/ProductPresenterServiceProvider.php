@@ -22,5 +22,6 @@ class ProductPresenterServiceProvider extends ServiceProvider
      */
     public function register()
     {
+
     }
 }
